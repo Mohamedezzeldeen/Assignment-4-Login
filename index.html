@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    <!-- ____________________Navbar___________________ -->
+    <nav class="navbar px-5 fixed-top d-none">
+      <div class="container px-5">
+        <a href="#" class="navbar-brand text-white">SMART LOGIN </a>
+        <form class="d-flex" role="search">
+          <a id="logoutBtn" class="btn btn-outline-warning text-white">
+            Logout
+          </a>
+        </form>
+      </div>
+    </nav>
+
+    <div class="login-content container w-50 text-center mt-5 p-5">
+      <h1>Smart Login System</h1>
+
+      <input
+        type="text"
+        id="userName"
+        class="form-control my-4 d-none"
+        placeholder="Enter Your Name"
+      />
+
+      <input
+        type="email"
+        id="userEmail"
+        class="form-control my-4"
+        placeholder="Enter Your Email"
+      />
+
+      <input
+        type="password"
+        id="userPassword"
+        class="form-control"
+        placeholder="Enter Your password"
+      />
+
+      <p class="fillingMsg text-danger mt-3 d-none">Please Fill all Inputs</p>
+      <p class="validMsg text-danger mt-3 d-none">Please Enter Valid Data</p>
+      <p class="incorrectMsg text-danger mt-3 d-none">
+        Incorrect User Name or Password
+      </p>
+      <p class="successMsg text-success mt-3 d-none">Sign Up Success</p>
+      <p class="repeatMsg text-danger mt-3 d-none">
+        These Data are used before
+      </p>
+
+      <button id="loginBtn" class="btn btn-outline-info text-center w-100 my-4">
+        Login
+      </button>
+
+      <button
+        id="signBtn"
+        class="btn btn-outline-info text-center w-100 my-4 d-none"
+      >
+        Sign Up
+      </button>
+
+      <p class="text-white">
+        Don’t have an account?
+        <a class="text-decoration-none text-white" href="signup.html"
+          >Sign Up</a
+        >
+      </p>
+
+      <p class="text-white d-none">
+        Don’t have an account?
+        <a class="text-decoration-none text-white" href="index.html">Sign In</a>
+      </p>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
